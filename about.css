@@ -1,24 +1,13 @@
-:root {
-  --page: #f6f9ff;
-  --surface: #ffffff;
-  --text: #12304a;
-  --muted: #5b7186;
-  --blue: #2563eb;
-  --blue-dark: #1d4ed8;
-  --line: #dce7f4;
-  --shadow: 0 10px 24px rgba(16, 32, 56, 0.08);
-}
-
-* {
-  box-sizing: border-box;
-}
+/* ============================================================
+   Skill Match — About Page Styles
+   Specific styles for about.html
+   Load base.css before this file
+   ============================================================ */
 
 body.about-page {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.7;
-  color: var(--text);
-  background: var(--page);
 }
 
 .site-header {
@@ -26,71 +15,8 @@ body.about-page {
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
   backdrop-filter: blur(8px);
-}
-
-.navbar {
-  max-width: 1152px;
-  margin: 0 auto;
-  padding: 18px 24px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.site-logo {
-  color: var(--blue-dark);
-  font-size: 22px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.nav-links,
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links {
-  list-style: none;
-  margin-left: auto;
-}
-
-.nav-links a {
-  display: block;
-  padding: 8px 10px;
-  color: var(--text);
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-}
-
-.nav-links a:hover {
-  background: var(--line);
-  color: var(--blue-dark);
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 16px;
-  color: white;
-  background: var(--blue);
-  border-radius: 8px;
-  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.2);
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.btn:hover {
-  background: var(--blue-dark);
-  transform: translateY(-2px);
 }
 
 .impact-content {
@@ -172,7 +98,7 @@ body.about-page {
   color: white;
 }
 
-.site-footer div > p {
+.site-footer div>p {
   max-width: 320px;
   margin: 0;
   line-height: 1.5;
